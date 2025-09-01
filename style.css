@@ -10,8 +10,6 @@ body {
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
-  min-height: 100vh;       /* Always fills screen height */
-  padding-bottom: 60px;    /* 👈 extra scroll space */
 }
 
 .container {
@@ -53,7 +51,7 @@ img {
 /* 📱 Responsive Styles */
 @media (max-width: 768px) {
   .main {
-    flex-direction: column; /* Sidebar stacks below content */
+    flex-direction: column; /* stack sidebar & content */
   }
 
   .sidebar, .content {
