@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A Letter for Rei</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="intro" id="introText">
-      I hope you'll read this.
-    </div>
-    <button class="btn" onclick="showLetter()">Read it</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter For Rei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title Page -->
+  <div id="title-page" class="page">
+    <h1>A Letter For Rei</h1>
+    <button id="read-button">Read It</button>
+  </div>
 
-    <div class="letter" id="letterBox">
-      <p id="typedText"></p>
-      <img src="jaja.png" alt="Signature" class="signature" />
+  <!-- Letter Page -->
+  <div id="letter-page" class="page" style="display:none;">
+    <div class="scroll-container">
+      <h2>Dear Rei,</h2>
+      <p>
+        <!-- Your letter content goes here -->
+      </p>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <audio id="bg-music" src="music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
 </html>
