@@ -11,27 +11,22 @@ body {
   background: #f9f9f9;
   color: #333;
 
-  /* ✅ Make it responsive + scrollable */
-  min-height: 100vh;     /* always fills screen */
+  /* ✅ only these two matter */
+  min-height: 100vh;     /* fills screen height */
   padding-bottom: 60px;  /* extra scroll space */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
-/* Intro text */
 .intro {
   font-size: 1.5rem;
-  margin-bottom: 20px;
-  padding: 10px;
-  max-width: 90%;        /* ✅ keeps it fitting on mobile */
-  word-wrap: break-word; /* ✅ prevents text overflow */
+  margin: 20px auto;
+  max-width: 90%;        /* ✅ fits on mobile */
+  text-align: center;
+  word-wrap: break-word;
 }
 
-/* Button styling */
 .btn {
+  display: block;
+  margin: 20px auto;
   padding: 10px 20px;
   font-size: 1rem;
   background: #222;
@@ -46,15 +41,8 @@ body {
   background: #444;
 }
 
-/* Flexible images */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
 /* Responsive tweaks */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .intro {
     font-size: 1.2rem;
   }
@@ -62,16 +50,5 @@ img {
   .btn {
     font-size: 0.9rem;
     padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro {
-    font-size: 1rem;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-    padding: 6px 14px;
   }
 }
