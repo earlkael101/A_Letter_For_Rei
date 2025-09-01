@@ -11,15 +11,17 @@ body {
   background: #f9f9f9;
   color: #333;
 
-  /* 👇 ensures page fills screen + scrollable space */
-  min-height: 100vh;
-  padding-bottom: 60px;
+
+
+
+
 }
 
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+
 }
 
 /* Flexible images */
@@ -27,6 +29,9 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+
+
+
 }
 
 /* Header & Footer */
@@ -42,38 +47,3 @@ img {
   display: flex;
   gap: 20px;
   margin: 20px 0;
-}
-
-.sidebar, .content {
-  flex: 1;
-  padding: 15px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* 📱 Responsive Styles */
-@media (max-width: 768px) {
-  .main {
-    flex-direction: column; /* Sidebar stacks below content */
-  }
-
-  .sidebar, .content {
-    width: 100%;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header, .footer {
-    font-size: 14px;
-    padding: 15px;
-  }
-
-  h1, h2 {
-    font-size: 1.2rem;
-  }
-}
